@@ -1,0 +1,78 @@
+html {
+	font-size: 10px;
+}
+
+html,
+body {
+	width: 100%;
+	/* height: 100%; */
+	overscroll-behavior: none;
+	-webkit-text-size-adjust: 100%;
+	font-family: 阿里巴巴普惠体, sans-serif;
+	background-color: #030213;
+}
+
+html,
+body,
+body * {
+	margin: 0;
+	padding-top: .01px;
+	box-sizing: border-box;
+	-webkit-tag-highlight-color: transparent;
+}
+
+section {
+	position: relative;
+	/* width: 100%; */
+}
+
+video,
+img,
+a {
+	color: inherit;
+	cursor: pointer;
+	display: block;
+	text-decoration: none;
+	object-fit: contain;
+	-webkit-tap-highlight-color: transparent;
+}
+
+p {
+	word-wrap: break-word;
+}
+
+svg {
+	-webkit-tag-highlight-color: transparent;
+}
+
+textarea,
+input {
+	width: 100%;
+	border: none;
+	background-color: transparent;
+	outline: none;
+}
+
+p::selection,
+img::selection {
+	color: #ffffff;
+	background-color: #000000;
+}
+
+/*::-webkit-scrollbar {*/
+/*	display: none;*/
+/*}*/
+
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder,
+textarea::-ms-input-placeholder,
+input:-ms-input-placeholder,
+textarea::-moz-placeholder,
+input::-moz-placeholder {
+	color: #DDDDDD;
+}
+
+
+::-webkit-scrollbar {
+	display: none;
+}

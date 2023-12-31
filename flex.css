@@ -1,0 +1,189 @@
+/* flex布局 */
+
+.flex-out {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.flex-in {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-start {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.flex-end {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.row-start {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.row-end {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.row-in {
+	display: flex;
+	justify-content: center;
+}
+
+.row-out {
+	display: flex;
+	justify-content: space-between;
+}
+
+.col-start {
+	display: flex;
+	align-items: flex-start;
+}
+
+.col-end {
+	display: flex;
+	align-items: flex-end;
+}
+
+.col-in {
+	display: flex;
+	align-items: center;
+}
+
+.col-out {
+	display: flex;
+	align-items: stretch;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+/* 竖 */
+.flex-col1 {
+	display: flex;
+	flex-direction: column;
+    align-items: flex-start;
+}
+
+.flex-col2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.flex-col3 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.flex-col4 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.flex-col5 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-col6 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.flex-col7 {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.flex-col8 {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.flex-col9 {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+/* 横 */
+.flex-row1 {
+	display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.flex-row2 {
+	display: flex;
+    align-items: flex-start;
+	justify-content: center;
+}
+
+.flex-row3 {
+	display: flex;
+    align-items: flex-start;
+	justify-content: flex-end;
+}
+
+.flex-row4 {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.flex-row5 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-row6 {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.flex-row7 {
+	display: flex;
+	align-items: flex-end;
+}
+
+.flex-row8 {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.flex-row9 {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+
+/* 换行 */
+.flex-wrap {
+	flex-wrap: wrap;
+}
+

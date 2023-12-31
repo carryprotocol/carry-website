@@ -1,0 +1,173 @@
+@import url('./swiper-bundle.min.css');
+@import url('./animate.min.css');
+@import url('./base.css');
+@import url('./font.css');
+@import url('./flex.css');
+@import url('./unit_pc.css');
+@import url('./unit_h5.css');
+
+/* box布局 */
+.fit-rel {
+	position: relative;
+}
+
+.fit-abs1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.fit-abs2 {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.fit-abs3 {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.fit-abs4 {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+
+.fit-abs5 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.fit-abs6 {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+}
+
+.fit-abs7 {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.fit-abs8 {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.fit-abs9 {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.fit-out {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.fit-row {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.fit-col {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+.fit-fixed {
+	position: fixed;
+	z-index: 9999;
+}
+
+.wh-all {
+	width: 100%;
+	height: 100%;
+}
+
+.w-all {
+	width: 100%;
+}
+
+.h-all {
+	height: 100%;
+}
+
+.h-auto {
+	height: auto;
+}
+
+.wh-v {
+    width: 100vw;
+    height: 100vh;
+}
+
+.h-vh {
+    height: 100vh;
+}
+
+.w-vw {
+    width: 100vw;
+}
+
+.h-vh50 {
+    height: 50vh;
+}
+
+.wh-max {
+	width: max-content;
+	height: max-content;
+}
+
+.w-max {
+	width: max-content;
+}
+
+.h-max {
+	height: max-content;
+}
+
+.scroll-y {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.scroll-x {
+	overflow-y: hidden;
+	overflow-x: scroll;
+}
+
+.scroll-h {
+	overflow: hidden;
+}
+
+.hide {
+    display: none;
+}
+
+@media only screen and (max-width: 750px) {
+	.fit-pc {
+		display: none !important;
+	}
+}
+
+@media only screen and (min-width: 751px) {
+	.fit-h5 {
+		display: none !important;
+	}
+}
