@@ -1660,6 +1660,7 @@
     }
 
     .screen7 .side5 {
+        display: none;
         background: #261051;
     }
 }
