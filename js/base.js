@@ -80,7 +80,7 @@ function gsapScreen3Opacity() {
     let heightScreen3Side3item = $('.screen3 .side3 .item').height();
 
     $('.screen3 .side3 .item').each((i, n) => {
-        if ($(n).position().top < 0 || $(n).position().top > heightScreen3Side3item * 2) {
+        if ($(n).position().top < 0 || $(n).position().top > heightScreen3Side3item * 2.8) {
             gsap.to(n, { opacity: .3 });
         } else {
             gsap.to(n, { opacity: 1 });
