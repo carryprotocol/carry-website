@@ -1,0 +1,24 @@
+name: deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build and Deploy
+
+    steps:
+      - uses: actions/checkout@main
+
+      - name: Publish
+        uses: nogsantos/scp-deploy@master
+        with:
+          src: ./
+          host: ${{ env.SSH_HOST }}
+          remote: ${{ env.SSH_DIR }}
+          port: ${{ env.SSH_PORT }}
+          user: ${{ env.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
