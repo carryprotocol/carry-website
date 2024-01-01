@@ -51,10 +51,10 @@ function checkSideBtnFn(page, name, idx) {
         page.find('.lastB').addClass('active');
     }
 
-    let i = idx == 2 ? 1 : idx;
+    // let i = idx == 2 ? 1 : idx;
 
-    page.find('[click-idx=' + i + ']').siblings().removeClass('active');
-    page.find('[click-idx=' + i + ']').addClass('active');
+    page.find('[click-idx=' + idx + ']').siblings().removeClass('active');
+    page.find('[click-idx=' + idx + ']').addClass('active');
 }
 
 function getTarget(n, name) {
