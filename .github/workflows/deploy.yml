@@ -19,6 +19,5 @@ jobs:
           src: ./
           host: ${{ env.SSH_HOST }}
           remote: ${{ env.SSH_DIR }}
-          port: ${{ env.SSH_PORT }}
           user: ${{ env.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
