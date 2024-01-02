@@ -16,7 +16,7 @@ jobs:
       - name: Publish
         uses: nogsantos/scp-deploy@master
         with:
-          src: ./
+          src: "./*"
           host: ${{ vars.SSH_HOST }}
           remote: ${{ vars.SSH_DIR }}
           user: ${{ vars.SSH_USER }}
