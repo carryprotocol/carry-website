@@ -160,6 +160,13 @@
     display: none;
 }
 
+.hover-in{
+	transition: .3s ease-out;
+}
+.hover-out{
+	transition: .3s ease-in;
+}
+
 @media only screen and (max-width: 750px) {
 	.fit-pc {
 		display: none !important;

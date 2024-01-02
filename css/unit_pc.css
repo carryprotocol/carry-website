@@ -4,11 +4,13 @@
         --swiper-navigation-sides-offset: 7.4rem;
     }
 
-    .swiper-button-next:after, .swiper-button-prev:after{
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
         content: '';
     }
 
     .swiper-button-next {
+        border-radius: 50%;
         cursor: pointer;
         width: 8rem;
         height: 8rem;
@@ -18,6 +20,7 @@
     }
 
     .swiper-button-prev {
+        border-radius: 50%;
         cursor: pointer;
         width: 8rem;
         height: 8rem;
@@ -187,7 +190,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         height: 3.6rem;
         padding: 0 2rem;
     }
@@ -423,6 +426,8 @@
         width: 4.5rem;
         height: 6.8rem;
         flex-shrink: 0;
+        left: 50%;
+        margin-left: -2.25rem;
     }
 
 
@@ -1790,7 +1795,7 @@
         font-style: normal;
         font-weight: 700;
         line-height: 6.8rem;
-        margin-bottom: 9.3rem;
+        margin-bottom: 8rem;
         padding: 0 10rem;
     }
 
@@ -1869,6 +1874,10 @@
         position: absolute;
         top: 4rem;
         right: 4rem;
+    }
+
+    .screen5-addU1 #swiper-screen5 {
+        padding: 1rem 0;
     }
 
 
@@ -2017,6 +2026,7 @@
     .screen7 .boxR svg {
         width: 100%;
         height: 100%;
+        border-radius: 50%;
     }
 
     .screen7 .boxT {
@@ -2042,6 +2052,7 @@
     }
 
     .screen7 .side {
+        cursor: pointer;
         width: 48rem;
         flex-shrink: 0;
         margin-bottom: 4rem;
@@ -2073,6 +2084,7 @@
         flex-shrink: 0;
         right: 1.4rem;
         bottom: 1.4rem;
+        border-radius: 50%;
     }
 
     .screen7 .side .icon svg {
@@ -2122,7 +2134,7 @@
     }
 
     .screen7 .side5 {
-        display:none;
+        display: none;
         background: #261051;
     }
 
@@ -2251,6 +2263,7 @@
     }
 
     .trimB {
+        pointer-events: none;
         bottom: 0;
         width: 192rem;
         height: 99.4rem;
@@ -2268,4 +2281,11 @@
         height: 200vw;
     }
 
+    .screen7 .side:hover .icon,
+    .screen3 .opt:hover,
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover,
+    .screen7 .boxR svg:hover {
+        background-color: rgba(255, 255, 255, .2);
+    }
 }

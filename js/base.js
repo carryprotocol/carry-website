@@ -2,6 +2,7 @@ let pcFit = innerWidth > fit;
 let tween = gsap.timeline({ defaults: { duration: .8, ease: "ease" } });
 let tweenLogo1 = gsap.timeline({ defaults: { duration: .8, ease: "ease" }, repeat: -1 });
 let tweenLogo2 = gsap.timeline({ defaults: { duration: .8, ease: "ease" }, repeat: -1 });
+let intervalScreen3Side1;
 
 function initGsap() {
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
@@ -252,10 +253,10 @@ function lastEvent(e) {
 function gsapInit() {
 
     // if (pcFit) {
-        gsap.set('.screen2 .bgU', { opacity: 0 });
-        gsap.set('.screen5 .bgU', { opacity: 0 });
-        gsap.set('.screen6 .bgU', { opacity: 0 });
-        gsap.set('.screen7 .bgU', { opacity: 0 });
+    gsap.set('.screen2 .bgU', { opacity: 0 });
+    gsap.set('.screen5 .bgU', { opacity: 0 });
+    gsap.set('.screen6 .bgU', { opacity: 0 });
+    gsap.set('.screen7 .bgU', { opacity: 0 });
     // }
 
     gsap.set('.screen1 .title', { y: '34rem', opacity: 0 });
@@ -330,6 +331,24 @@ function logoInit() {
         .fromTo('.screen3 .side1 .logo2 .icon4-1', { x: 0, y: 0 }, { x: '-55.5rem', y: '15.3rem' }, '<');
 }
 
+function gsapScreen3Side1() {
+    let showOrHide = true;
+    $('.screen3 .side1 .logo1').css({ opacity: 1, zIndex: 1 });
+    $('.screen3 .side1 .logo2').css({ opacity: 0, zIndex: 0 });
+    clearInterval(intervalScreen3Side1);
+
+    intervalScreen3Side1 = setInterval(() => {
+        showOrHide = !showOrHide;
+        if (showOrHide) {
+            gsap.to($('.screen3 .side1 .logo1'), { opacity: 1, zIndex: 1 });
+            gsap.to($('.screen3 .side1 .logo2'), { opacity: 0, zIndex: 0 });
+        } else {
+            gsap.to($('.screen3 .side1 .logo2'), { opacity: 1, zIndex: 1 });
+            gsap.to($('.screen3 .side1 .logo1'), { opacity: 0, zIndex: 0 });
+        }
+    }, 5000);
+}
+
 function initPc() {
 
     $('.lastB').on('click', lastEvent);
@@ -345,11 +364,22 @@ function initPc() {
     $('.screen3 .opts .opt').on('click', function () {
         let idx = $(this).attr('click-idx');
 
+        if (idx == 1) {
+            gsapScreen3Side1();
+        }
+
         gsap.to($('#touch-screen3').children(), { opacity: 0, zIndex: 0 });
 
         gsap.fromTo($('#touch-screen3').children().eq(idx), { y: 10 + 'rem', opacity: 0 }, { y: 0, opacity: 1, zIndex: 1 });
 
         checkSideBtnFn($('.screen3'), '#touch-screen3', idx);
+    });
+
+    $(".hover3d").hover3d({
+        selector: ".hover",
+        shine: true,
+        sensitivity: 20,
+        perspective: 1000
     });
 
     new Swiper('#swiper-screen5', {
@@ -404,6 +434,13 @@ function initH5() {
         navigation: {
             nextEl: '#swiper-screen3 .swiper-button-next',
             prevEl: '#swiper-screen3 .swiper-button-prev',
+        },
+        on: {
+            slideChange: function () {
+                if (this.activeIndex == 1) {
+                    gsapScreen3Side1();
+                }
+            },
         },
     });
 
