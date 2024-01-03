@@ -1,4 +1,12 @@
 @media only screen and (min-width: 751px) {
+    .hover3d:hover .shine {
+        display: block;
+    }
+
+    .shine {
+        display: none;
+    }
+
     :root {
         --swiper-navigation-top-offset: 65%;
         --swiper-navigation-sides-offset: 7.4rem;
@@ -144,7 +152,7 @@
     .headerU {
         position: fixed;
         top: 0;
-        z-index: 9;
+        z-index: 11;
         background: rgba(3, 2, 19, 0.9);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(10px);
@@ -193,6 +201,11 @@
 
         height: 3.6rem;
         padding: 0 2rem;
+    }
+
+    .headerU .navU a:hover {
+        background: url('../imgs/nav-active.png') no-repeat;
+        background-size: 100% 100%;
     }
 
     .headerU .navU a.active {
@@ -569,6 +582,45 @@
         height: 40rem;
         flex-shrink: 0;
     }
+
+    @keyframes shimmer {
+        0% {
+            opacity: 0;
+            background-position: -50%;
+        }
+
+        5% {
+            opacity: 0.7;
+        }
+
+        10% {
+            opacity: 0;
+            background-position: 150%;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+
+    .screen2 .item:hover .shimmer {
+        --geist-foreground-rgb: 255, 255, 255;
+        background: linear-gradient(112deg, transparent 30%, rgba(var(--geist-foreground-rgb), 0.1) 40%, rgba(var(--geist-foreground-rgb), 0.3) 50%, rgba(var(--geist-foreground-rgb), 0.1) 60%, transparent 80%);
+        position: absolute;
+        inset: 0;
+        z-index: 20;
+        pointer-events: none;    /* animation-delay: 4s; */
+        border-radius: 2rem;
+        background-size: 200% auto;
+        background-position: 0;
+        animation: shimmer 14s cubic-bezier(0.8, 0, 0.05, 1);
+        filter: blur(3rem);
+        -webkit-filter: blur(3rem);
+        /* animation-delay: 4s; */
+    }
+
+
+
 
 
     /* screen3 */
@@ -1440,6 +1492,12 @@
         align-items: flex-start;
         gap: 2rem;
         margin: 0 2rem;
+        transition: .3s ease-out;
+    }
+
+    .screen4 .side:hover {
+        transform: scale(1.05);
+        box-shadow: 0 14px 50px -4px rgba(0, 0, 0, 1);
     }
 
     .screen4 .side .logo {
@@ -1810,16 +1868,24 @@
         gap: 4rem;
     }
 
+    .screen5-addU1 .swiper-slide {
+        /* border: 1.5px solid rgba(118, 126, 185, 0.5); */
+        border-radius: 2rem;
+        overflow: hidden;
+    }
+
     .screen5-addU1 .side {
-        margin: auto;
+        /* margin: auto; */
         padding: 4rem;
-        width: 48rem;
+        width: 100%;
         /* height: 43.1rem; */
         flex-shrink: 0;
         border-radius: 2rem;
-        border: 1.5px solid rgba(118, 126, 185, 0.50);
-        background: rgba(48, 56, 84, 0.50);
+        /* border: 1.5px solid rgba(118, 126, 185, 0.50); */
+        /* background: rgba(48, 56, 84, 0.50); */
+        background: rgba(20, 21, 39, 1);
         backdrop-filter: blur(15px);
+        z-index: 11;
     }
 
 
@@ -2059,6 +2125,11 @@
         border-radius: 3rem;
     }
 
+    .screen7 .side .hover {
+        border-radius: 3rem;
+        overflow: hidden;
+    }
+
     .screen7 .side .time {
         color: #FFF;
         font-family: Helvetica;
@@ -2117,7 +2188,7 @@
         padding-left: 3.6rem;
     }
 
-    .screen7 .side1 {
+    /* .screen7 .side1 {
         background: #1F0A44;
     }
 
@@ -2136,7 +2207,7 @@
     .screen7 .side5 {
         display: none;
         background: #261051;
-    }
+    } */
 
     .screen7 .side5 .mark {
         border-radius: 3rem;

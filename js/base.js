@@ -384,14 +384,20 @@ function initPc() {
 
     new Swiper('#swiper-screen5', {
         slidesPerView: 3,
-        spaceBetween: 0,
+        spaceBetween: 4 * fitSize,
         slidesPerGroup: 3,
         loop: true,
         loopFillGroupWithBlank: true,
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '#swiper-screen5 .swiper-button-next',
+            prevEl: '#swiper-screen5 .swiper-button-prev',
         },
+    });
+
+    // Init Spotlight
+    const spotlights = document.querySelectorAll('[data-spotlight]');
+    spotlights.forEach((spotlight) => {
+      new Spotlight(spotlight);
     });
 
     gsapScreen3Opacity();

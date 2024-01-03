@@ -31,7 +31,7 @@
                     perspective: r.perspective + "px",
                     transformStyle: "preserve-3d",
                     transform: "rotateY(" + v + "deg) rotateX(" + c + "deg)"
-                }), a.css("background", "linear-gradient(" + f + "deg, rgba(255,255,255," + e.offsetY / s * 0 + ") 0%,rgba(255,255,255,0) 80%)")
+                }), a.css("background", "linear-gradient(" + f + "deg, rgba(255,255,255," + e.offsetY / s * .5 + ") 0%,rgba(255,255,255,0) 80%)")
             }
 
             function n() {

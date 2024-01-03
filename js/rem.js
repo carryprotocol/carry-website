@@ -1,4 +1,5 @@
 var fit = 750;
+var fitSize = 10;
 
 // 适配
 var fitInit = function () {
@@ -14,6 +15,8 @@ var fitInit = function () {
 
         // document.documentElement.style.fontSize = Math.min(size_w, size_h) + 'px';
         document.documentElement.style.fontSize = size_w + 'px';
+
+        fitSize = size_w;
         // zoomhtml();
         openPage();
     }
