@@ -1885,7 +1885,7 @@
     .screen6 {
         height: max-content;
         /* margin: 24rem auto; */
-        padding: 24rem 0;
+        padding: 24rem 0 0;
     }
 
     .screen6 .bgU .trim1 {
