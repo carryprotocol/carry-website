@@ -466,6 +466,7 @@
         line-height: 2.8rem;
         margin-bottom: 1rem;
         align-items: flex-end;
+        white-space: nowrap;
     }
 
     .screen2 .item .doc {
