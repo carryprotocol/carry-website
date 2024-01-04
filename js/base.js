@@ -160,7 +160,7 @@ function gsapScreen5() {
         defaults: { duration: .8, ease: "ease" },
         scrollTrigger: {
             trigger: ".screen5",
-            start: "top bottom",
+            start: "top center",
             end: "top top",
             scrub: 1,
             // markers: true
