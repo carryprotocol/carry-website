@@ -1305,14 +1305,14 @@
         position: absolute;
         top: 3.7rem;
         right: 0;
-        background-color: #02E3CF;
+        background-color: #0A95DE;
         border-radius: 50%;
     }
 
     .screen5 .bgU .trim3 {
         width: 23.25rem;
         height: 23.25rem;
-        background-color: #0A95DE;
+        background-color: #02E3CF;
         flex-shrink: 0;
         position: absolute;
         right: 0;
@@ -1327,7 +1327,17 @@
         font-style: normal;
         font-weight: 700;
         line-height: 4.8rem;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .screen5 .subtitle {
+        color: #FFF;
+        font-family: Helvetica;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2.4rem;
+        margin-bottom: 2rem;
     }
 
     .screen5 .title .icon {
@@ -1401,6 +1411,12 @@
         line-height: 2.2rem;
     }
 
+    .screen5-addU2 .bgU .bg1 {
+        position: absolute;
+        top: 35%;
+        right: 0;
+        height: 60rem;
+    }
 
 
 

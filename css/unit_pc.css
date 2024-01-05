@@ -400,7 +400,7 @@
         position: absolute;
         right: 2.63rem;
         bottom: 0;
-        background-color: #0A95DE;
+        background-color: #02E3CF;
         border-radius: 50%;
     }
 
@@ -609,7 +609,8 @@
         position: absolute;
         inset: 0;
         z-index: 20;
-        pointer-events: none;    /* animation-delay: 4s; */
+        pointer-events: none;
+        /* animation-delay: 4s; */
         border-radius: 2rem;
         background-size: 200% auto;
         background-position: 0;
@@ -704,7 +705,7 @@
         position: absolute;
         right: 0;
         bottom: 0;
-        background-color: #0A95DE;
+        background-color: #02E3CF;
         border-radius: 50%;
     }
 
@@ -1529,7 +1530,7 @@
 
     /* screen5 */
     .screen5 {
-        padding-top: 27rem;
+        padding-top: 21rem;
         height: max-content;
     }
 
@@ -1538,8 +1539,8 @@
         width: 58.5rem;
         height: 52.825rem;
         flex-shrink: 0;
-        right: 8.5rem;
-        top: 64rem;
+        right: 0;
+        top: 74rem;
         filter: blur(15rem);
     }
 
@@ -1573,165 +1574,53 @@
         position: absolute;
         right: 0;
         bottom: 0;
-        background-color: #0A95DE;
+        background-color: #02E3CF;
         border-radius: 50%;
     }
 
-    .screen5 .boxL {
-        position: sticky;
-        top: 14.6rem;
-        padding-left: 13rem;
-        margin-left: 17.6rem;
-        margin-bottom: 10rem;
-    }
-
-    .screen5 .boxL::before {
-        content: '';
-        display: block;
-        width: 33.9rem;
-        height: 55rem;
-        flex-shrink: 0;
-        border-radius: 1.6rem;
-        background: linear-gradient(269deg, rgba(92, 255, 245, 0.20) 0.91%, rgba(92, 255, 245, 0.00) 99.31%);
-        filter: blur(8.5rem);
-
-        position: absolute;
-        left: -25%;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .screen5 .boxR {
-        margin-right: 21.5rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .screen5 .box-in {
+        padding: 0 20rem;
     }
 
     .screen5 .title {
         color: #FFF;
-        font-family: Helvetica;
+        text-align: center;
+        font-family: Gilroy;
         font-size: 6rem;
         font-style: normal;
         font-weight: 700;
         line-height: 6.8rem;
-        margin-bottom: 6.57rem;
-    }
-
-    .screen5 .title .icon {
-        width: 4.4893rem;
-        height: 1.0256rem;
-        flex-shrink: 0;
-        margin-top: 2rem;
-        margin-left: .5rem;
+        margin-bottom: 4rem;
     }
 
     .screen5 .subtitle {
+        width: 65.8rem;
         color: #FFF;
-        font-family: Helvetica;
+        text-align: center;
+        font-family: Gilroy;
         font-size: 2.4rem;
         font-style: normal;
         font-weight: 400;
         line-height: 3.2rem;
-        width: 37.6rem;
-        margin-bottom: 9rem;
+        margin-bottom: 12rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .screen5 .mark {
-        display: block;
-        width: 1.6rem;
-        height: 45.2rem;
-        flex-shrink: 0;
-        background: rgba(92, 255, 245, 0.70);
-        box-shadow: -20px 0px 90px 0px rgba(92, 255, 245, 0.30), 0px 0px 8px 0px #FFF inset;
-    }
-
-    .screen5 .markT {
-        display: block;
-        width: 2rem;
-        height: 0.6rem;
-        flex-shrink: 0;
-        background: #FFF;
-    }
-
-    .screen5 .markB {
-        display: block;
-        width: 2rem;
-        height: 0.6rem;
-        flex-shrink: 0;
-        background: #FFF;
-    }
-
-    .screen5 .mark1 {
-        width: 0.2rem;
-        height: 0.6rem;
-        flex-shrink: 0;
-        background: rgba(0, 254, 221, 0.20);
-        margin-left: .8rem;
-    }
-
-    .screen5 .mark2 {
-        width: 0.2rem;
-        height: 0.6rem;
-        flex-shrink: 0;
-        background: #00FEDD;
-        margin-left: .8rem;
-    }
-
-    .screen5 .prompt {
-        color: #00FEDD;
-        font-family: Helvetica;
-        font-size: 1.6rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 2.4rem;
-        text-transform: uppercase;
-        transform: rotate(90deg) translate(-50%, -50%);
-        position: absolute;
-        left: 0;
-        transform-origin: center left;
-    }
-
-    .screen5 .box-photo {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        padding-left: 4.6rem;
-    }
-
-    .screen5 .boxL .photo {
-        width: 4rem;
-        height: 4rem;
-        flex-shrink: 0;
-        background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-        margin-left: -1rem;
-        margin-bottom: 1rem;
-
-        border-radius: 2rem;
-        border: 2px solid #FFF;
-        background: #D5D5D5;
-    }
-
-    .screen5 .icon {
-        width: 10.8363rem;
-        flex-shrink: 0;
-        transform: translateY(-50%);
-    }
-
-    .screen5 .line {
-        width: 4.4893rem;
-        height: 1.0256rem;
-        flex-shrink: 0;
+    .screen5 .box-side {
+        column-gap: 8rem;
+        row-gap: 10rem;
     }
 
     .screen5 .side {
         cursor: pointer;
         position: relative;
-        width: 32rem;
+        width: 40rem;
         height: max-content;
-        padding: 1rem;
+        padding: 1rem 2rem;
         display: inline-flex;
         flex-direction: column;
-        align-items: flex-start;
-        margin-left: 14rem;
+        align-items: center;
         margin-bottom: 10rem;
     }
 
@@ -1802,7 +1691,7 @@
 
     .screen5 .type {
         color: #FFF;
-        font-family: Helvetica;
+        font-family: Gilroy;
         font-size: 1.6rem;
         font-style: normal;
         font-weight: 500;
@@ -1812,7 +1701,7 @@
 
     .screen5 .name {
         color: #FFF;
-        font-family: Helvetica;
+        font-family: Gilroy;
         font-size: 2.4rem;
         font-style: normal;
         font-weight: 700;
@@ -1822,11 +1711,41 @@
 
     .screen5 .doc {
         color: rgba(255, 255, 255, 0.70);
-        font-family: Helvetica;
+        text-align: center;
+        font-family: Gilroy;
         font-size: 1.6rem;
         font-style: normal;
         font-weight: 500;
         line-height: 2.4rem;
+    }
+
+    .screen5-addU2 {
+        padding-top: 17rem;
+        padding-bottom: 17rem;
+    }
+
+    .screen5-addU2 .bg1 {
+        width: 124rem;
+        left: 0;
+        top: 40rem;
+    }
+
+    .screen5-addU2 .bg2 {
+        width: 70.5rem;
+        right: 0;
+        bottom: 3rem;
+    }
+
+    .screen5-addU2 .title {
+        margin-bottom: 13.6rem;
+    }
+
+    .screen5-addU2 .box-side {
+        row-gap: 12rem;
+    }
+
+    .screen5-addU2 .side {
+        width: 72rem;
     }
 
 

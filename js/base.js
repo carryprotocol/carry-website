@@ -155,11 +155,10 @@ function gsapScreen2() {
 }
 
 function gsapScreen5() {
-
     let tween = gsap.timeline({
         defaults: { duration: .8, ease: "ease" },
         scrollTrigger: {
-            trigger: ".screen5",
+            trigger: "#screen5",
             start: "top center",
             end: "top top",
             scrub: 1,
@@ -167,17 +166,44 @@ function gsapScreen5() {
         }
     });
 
-    tween.to('.screen5 .bgU', { opacity: 1 })
-        .to('.screen5 .boxL', { opacity: 1 }, '<')
-        .to('.screen5 .title', { y: 0, opacity: 1 }, '<')
-        .to('.screen5 .line', { y: 0, opacity: 1 }, '<')
-        .to('.screen5 .subtitle', { y: 0, opacity: 1 }, '<')
-        .to('.screen5 .gsap1', { y: 0, opacity: 1 }, '<')
-        .to('.screen5 .side1', { y: 0, opacity: 1 }, '<')
-        .to('.screen5 .side2', { y: 0, opacity: 1 }, '<')
-        .to('.screen5 .side3', { y: 0, opacity: 1 }, '<')
-        .to('.screen5 .side4', { y: 0, opacity: 1 }, '<')
-        .to('.screen5 .side5', { y: 0, opacity: 1 }, '<');
+    tween.to('#screen5 .bgU', { opacity: 1 })
+        .to('#screen5 .boxL', { opacity: 1 }, '<')
+        .to('#screen5 .title', { y: 0, opacity: 1 }, '<')
+        .to('#screen5 .line', { y: 0, opacity: 1 }, '<')
+        .to('#screen5 .subtitle', { y: 0, opacity: 1 }, '<')
+        .to('#screen5 .side1', { y: 0, opacity: 1 }, '<')
+        .to('#screen5 .side2', { y: 0, opacity: 1 }, '<')
+        .to('#screen5 .side3', { y: 0, opacity: 1 }, '<')
+        .to('#screen5 .side4', { y: 0, opacity: 1 }, '<')
+        .to('#screen5 .side5', { y: 0, opacity: 1 }, '<');
+}
+
+function gsapScreen5Add2() {
+
+    let tween = gsap.timeline({
+        defaults: { duration: .8, ease: "ease" },
+        scrollTrigger: {
+            trigger: "#screen5-addU2",
+            start: "top center",
+            end: "top top",
+            scrub: 1,
+            // markers: true
+        }
+    });
+
+    tween.to('#screen5-addU2 .bgU', { opacity: 1 })
+        .to('#screen5-addU2 .boxL', { opacity: 1 }, '<')
+        .to('#screen5-addU2 .title', { y: 0, opacity: 1 }, '<')
+        .to('#screen5-addU2 .line', { y: 0, opacity: 1 }, '<')
+        .to('#screen5-addU2 .subtitle', { y: 0, opacity: 1 }, '<')
+        .to('#screen5-addU2 .side6', { y: 0, opacity: 1 }, '<')
+        .to('#screen5-addU2 .side7', { y: 0, opacity: 1 }, '<')
+        .to('#screen5-addU2 .side8', { y: 0, opacity: 1 }, '<')
+        .to('#screen5-addU2 .side9', { y: 0, opacity: 1 }, '<')
+        .to('#screen5-addU2 .side10', { y: 0, opacity: 1 }, '<')
+        .to('#screen5-addU2 .side11', { y: 0, opacity: 1 }, '<')
+        .to('#screen5-addU2 .side12', { y: 0, opacity: 1 }, '<')
+        .to('#screen5-addU2 .side13', { y: 0, opacity: 1 }, '<');
 }
 
 function gsapScreen6() {
@@ -279,25 +305,30 @@ function gsapInit() {
     gsap.set('.screen2 .item4', { y: '68.5rem', opacity: 0 });
 
 
-    gsap.set('.screen5 .boxL', { opacity: 0 });
-    gsap.set('.screen5 .title', { y: '8rem', opacity: 0 });
-    gsap.set('.screen5 .line', { y: '12rem', opacity: 0 });
-    gsap.set('.screen5 .subtitle', { y: '16rem', opacity: 0 });
-    gsap.set('.screen5 .gsap1', { y: '20rem', opacity: 0 });
-    gsap.set('.screen5 .icon path', { drawSVG: '0% 0%' });
-    gsap.set('.screen5 .side1', { y: '8rem', opacity: 0 });
-    gsap.set('.screen5 .side2', { y: '24rem', opacity: 0 });
-    gsap.set('.screen5 .side3', { y: '24rem', opacity: 0 });
-    gsap.set('.screen5 .side4', { y: '40rem', opacity: 0 });
-    gsap.set('.screen5 .side5', { y: '24rem', opacity: 0 });
+    gsap.set('#screen5 .boxL', { opacity: 0 });
+    gsap.set('#screen5 .title', { y: '8rem', opacity: 0 });
+    gsap.set('#screen5 .line', { y: '12rem', opacity: 0 });
+    gsap.set('#screen5 .subtitle', { y: '16rem', opacity: 0 });
+    gsap.set('#screen5 .gsap1', { y: '20rem', opacity: 0 });
+    gsap.set('#screen5 .icon path', { drawSVG: '0% 0%' });
+    gsap.set('#screen5 .side1', { y: '8rem', opacity: 0 });
+    gsap.set('#screen5 .side2', { y: '24rem', opacity: 0 });
+    gsap.set('#screen5 .side3', { y: '24rem', opacity: 0 });
+    gsap.set('#screen5 .side4', { y: '40rem', opacity: 0 });
+    gsap.set('#screen5 .side5', { y: '24rem', opacity: 0 });
+
+    gsap.set('#screen5-addU2 .side6', { y: '8rem', opacity: 0 });
+    gsap.set('#screen5-addU2 .side7', { y: '16rem', opacity: 0 });
+    gsap.set('#screen5-addU2 .side8', { y: '24rem', opacity: 0 });
+    gsap.set('#screen5-addU2 .side9', { y: '32rem', opacity: 0 });
+    gsap.set('#screen5-addU2 .side10', { y: '40rem', opacity: 0 });
+    gsap.set('#screen5-addU2 .side11', { y: '48rem', opacity: 0 });
+    gsap.set('#screen5-addU2 .side12', { y: '54rem', opacity: 0 });
+    gsap.set('#screen5-addU2 .side13', { y: '64rem', opacity: 0 });
 
     gsap.set('.screen6 .lineB', { opacity: 0 });
     gsap.set('.screen6 .gsap1', { y: '7.6rem', opacity: 0 });
     gsap.set('.screen6 .content', { y: '10rem', opacity: 0 });
-
-    // gsap.set(".screen6 .side1 img", { x: '-100vw' })
-    // gsap.set(".screen6 .side2 img", { x: '100vw' })
-    // gsap.set(".screen6 .side3 img", { x: '-100vw' })
 
     gsap.set('.screen7 .gsap1', { y: '21.8rem', opacity: 0 })
     gsap.set('.screen7 .title', { y: '21.8rem', opacity: 0 })
@@ -408,6 +439,7 @@ function initPc() {
     gsapScreen1();
     gsapScreen2();
     gsapScreen5();
+    gsapScreen5Add2();
     gsapScreen6();
     gsapScreen7();
 }
@@ -474,6 +506,7 @@ function initH5() {
     gsapScreen1();
     gsapScreen2();
     gsapScreen5();
+    gsapScreen5Add2();
     gsapScreen6();
     gsapScreen7();
 }
