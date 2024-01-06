@@ -867,6 +867,7 @@
     }
 
     .screen3 .side2 .tab {
+        height: 100%;
         color: #FFF;
         font-family: Helvetica;
         font-size: 2rem;
@@ -1015,11 +1016,13 @@
     }
 
     .screen3 .side2 .wrap {
-        display: none;
+        opacity: 0;
+        /* display: none; */
     }
 
     .screen3 .side2 .wrap.active {
-        display: block;
+        opacity: 1;
+        /* display: block; */
     }
 
     .screen3 .side2 .boxR .title {

@@ -1,7 +1,7 @@
 let pcFit = innerWidth > fit;
 let tween = gsap.timeline({ defaults: { duration: .8, ease: "ease" } });
 let tweenLogo1 = gsap.timeline({ defaults: { duration: 1, ease: "ease" }, repeat: -1 });
-let tweenLogo2 = gsap.timeline({ defaults: { duration: 1, ease: "ease" }, repeat: -1 });
+let tweenLogo2 = gsap.timeline({ defaults: { duration: 1, ease: "ease" }, repeat: -1, repeatDelay: 1.2 });
 let intervalScreen3Side1;
 
 function initGsap() {
@@ -73,8 +73,9 @@ function evtTab(e) {
     $(e.target).addClass('active');
 
     let wrap = $(e.target).attr('data-wrap');
-    $(wrap).siblings().removeClass('active');
-    $(wrap).addClass('active');
+
+    gsap.to($(wrap), { opacity: 1, zIndex: 1 });
+    gsap.to($(wrap).siblings(), { opacity: 0, zIndex: 0 });
 }
 
 function gsapScreen3Opacity() {
@@ -152,6 +153,26 @@ function gsapScreen2() {
         .to('.screen2 .item2', { y: 0, opacity: 1 }, '<')
         .to('.screen2 .item3', { y: 0, opacity: 1 }, '<')
         .to('.screen2 .item4', { y: 0, opacity: 1 }, '<');
+}
+
+function gsapScreen3() {
+
+    gsap.set('.screen3 .side0 .iphone1', { rotate: 10, translateX: '64%', translateY: '-6%' });
+    gsap.set('.screen3 .side0 .iphone3', { rotate: -10, translateX: '-64%', translateY: '-6%' });
+
+
+    let tween = gsap.timeline({
+        defaults: { duration: .3, ease: "power1.inOut" },
+        delay: .5,
+        scrollTrigger: {
+            trigger: ".screen3",
+            start: "top center",
+            end: "top top",
+        }
+    });
+
+    tween.to('.screen3 .side0 .iphone1', { rotate: 0, translateX: 0, translateY: 0 })
+        .to('.screen3 .side0 .iphone3', { rotate: 0, translateX: 0, translateY: 0 }, '<');
 }
 
 function gsapScreen5() {
@@ -362,6 +383,16 @@ function logoInit() {
         .fromTo('.screen3 .side1 .logo2 .icon4-1', { x: 0, y: 0 }, { x: '-55.5rem', y: '15.3rem' }, '<');
 }
 
+function gsapScreen3Side0() {
+    let tween = gsap.timeline({ defaults: { duration: .3, ease: "power1.inOut" }, delay: .5 });
+
+    gsap.set('.screen3 .side0 .iphone1', { rotate: 10, translateX: '64%', translateY: '-6%' });
+    gsap.set('.screen3 .side0 .iphone3', { rotate: -10, translateX: '-64%', translateY: '-6%' });
+
+    tween.to('.screen3 .side0 .iphone1', { rotate: 0, translateX: 0, translateY: 0 })
+        .to('.screen3 .side0 .iphone3', { rotate: 0, translateX: 0, translateY: 0 }, '<');
+}
+
 function gsapScreen3Side1() {
     let showOrHide = true;
     $('.screen3 .side1 .logo1').css({ opacity: 1, zIndex: 1 });
@@ -386,7 +417,9 @@ function initPc() {
     $('.nextB').on('click', nextEvent);
 
     $('.screen3 .side3 .list').scroll(gsapScreen3Opacity);
+
     $('.screen3 .side2 .tabU').on('click', evtTab);
+
     $('.headerU .navU a').on('click', function () {
         $('.headerU .navU a').removeClass('active');
         $(this).addClass('active');
@@ -395,7 +428,9 @@ function initPc() {
     $('.screen3 .opts .opt').on('click', function () {
         let idx = $(this).attr('click-idx');
 
-        if (idx == 1) {
+        if (idx == 0) {
+            gsapScreen3Side0();
+        } else if (idx == 1) {
             gsapScreen3Side1();
         }
 
@@ -428,7 +463,7 @@ function initPc() {
     // Init Spotlight
     const spotlights = document.querySelectorAll('[data-spotlight]');
     spotlights.forEach((spotlight) => {
-      new Spotlight(spotlight);
+        new Spotlight(spotlight);
     });
 
     gsapScreen3Opacity();
@@ -438,6 +473,7 @@ function initPc() {
     gsapScreen0();
     gsapScreen1();
     gsapScreen2();
+    gsapScreen3();
     gsapScreen5();
     gsapScreen5Add2();
     gsapScreen6();
@@ -475,7 +511,9 @@ function initH5() {
         },
         on: {
             slideChange: function () {
-                if (this.activeIndex == 1) {
+                if (this.activeIndex == 0) {
+                    gsapScreen3Side0();
+                } else if (this.activeIndex == 1) {
                     gsapScreen3Side1();
                 }
             },
@@ -505,6 +543,7 @@ function initH5() {
     gsapScreen0();
     gsapScreen1();
     gsapScreen2();
+    gsapScreen3();
     gsapScreen5();
     gsapScreen5Add2();
     gsapScreen6();
