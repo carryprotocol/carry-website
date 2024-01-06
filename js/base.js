@@ -1,7 +1,7 @@
 let pcFit = innerWidth > fit;
 let tween = gsap.timeline({ defaults: { duration: .8, ease: "ease" } });
-let tweenLogo1 = gsap.timeline({ defaults: { duration: .8, ease: "ease" }, repeat: -1 });
-let tweenLogo2 = gsap.timeline({ defaults: { duration: .8, ease: "ease" }, repeat: -1 });
+let tweenLogo1 = gsap.timeline({ defaults: { duration: 1, ease: "ease" }, repeat: -1 });
+let tweenLogo2 = gsap.timeline({ defaults: { duration: 1, ease: "ease" }, repeat: -1 });
 let intervalScreen3Side1;
 
 function initGsap() {
