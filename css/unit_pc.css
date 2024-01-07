@@ -1669,7 +1669,7 @@
 
     .screen5 .logo .bg {
         transition: all .3s;
-        width: 21.4rem;
+        width: 100%;
         height: max-content;
         flex-shrink: 0;
         filter: brightness(100);
@@ -1684,6 +1684,7 @@
         height: 20.4rem;
         flex-shrink: 0;
         margin-bottom: 1rem;
+        overflow: hidden;
     }
 
     .screen5 .side .photo {
