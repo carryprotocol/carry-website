@@ -219,13 +219,13 @@
     .footerU {
         position: relative;
         width: 188rem;
-        height: 58.7rem;
+        height: 42.7rem;
         bottom: 2rem;
         margin: auto;
     }
 
     .footerU .boxT {
-        margin-top: 18.3rem;
+        margin-top: 9.3rem;
         width: 152rem;
     }
 
@@ -283,8 +283,12 @@
         font-size: 1.6rem;
         font-style: normal;
         font-weight: 500;
-        line-height: 2.4rem;
+        line-height: 2.2rem;
         margin-bottom: .8rem;
+    }
+
+    .footerU .link .key {
+        width: 10.2rem;
     }
 
     .footerU .boxB {
@@ -1491,6 +1495,7 @@
         backdrop-filter: blur(2.5rem);
         display: flex;
         width: 48rem;
+        height: 45.6rem;
         padding: 4rem 3rem;
         flex-direction: column;
         align-items: flex-start;
@@ -1612,7 +1617,7 @@
 
     .screen5 .box-side {
         column-gap: 8rem;
-        row-gap: 10rem;
+        row-gap: 16rem;
     }
 
     .screen5 .side {
@@ -1624,7 +1629,7 @@
         display: inline-flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 10rem;
+        /* margin-bottom: 10rem; */
     }
 
     .screen5 .side::after {
@@ -1680,8 +1685,8 @@
     }
 
     .screen5 .logo {
-        width: 21.4rem;
-        height: 20.4rem;
+        width: 14.98rem;
+        height: 14.28rem;
         flex-shrink: 0;
         margin-bottom: 1rem;
         overflow: hidden;
@@ -1724,8 +1729,8 @@
     }
 
     .screen5-addU2 {
-        padding-top: 17rem;
-        padding-bottom: 17rem;
+        padding-top: 31rem;
+        padding-bottom: 13.6rem;
     }
 
     .screen5-addU2 .bg1 {
@@ -1749,7 +1754,7 @@
     }
 
     .screen5-addU2 .side {
-        width: 72rem;
+        width: 58rem;
     }
 
 
@@ -1801,7 +1806,7 @@
         /* margin: auto; */
         padding: 4rem;
         width: 100%;
-        /* height: 43.1rem; */
+        height: 43.1rem;
         flex-shrink: 0;
         border-radius: 2rem;
         /* border: 1.5px solid rgba(118, 126, 185, 0.50); */
@@ -1922,17 +1927,19 @@
     }
 
     .screen6 .logo {
-        height: 13.5rem;
-        margin-bottom: 3rem;
+        height: 10.4516rem;
     }
 
     .screen6 .content {
-        margin-top: 6.3rem;
-        margin-bottom: 9.9rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 6.05rem;
+        margin-top: 8.75rem;
+        margin-bottom: 11.6rem;
     }
 
     .screen6 .side {
-        gap: 4.5rem;
+        column-gap: 12rem;
     }
 
 
