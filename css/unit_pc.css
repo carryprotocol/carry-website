@@ -1776,11 +1776,13 @@
   }
 
   .screen5-addU2 .box-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 6rem;
   }
 
   .screen5-addU2 .side {
-    width: 50rem;
+    width: auto;
   }
 
   /* screen5-addU1 */
