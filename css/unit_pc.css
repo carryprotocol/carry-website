@@ -1593,7 +1593,7 @@
     .screen5 .title {
         color: #FFF;
         text-align: center;
-        font-family: Gilroy;
+        font-family: Helvetica;
         font-size: 6rem;
         font-style: normal;
         font-weight: 700;
@@ -1605,7 +1605,7 @@
         width: 65.8rem;
         color: #FFF;
         text-align: center;
-        font-family: Gilroy;
+        font-family: Helvetica;
         font-size: 2.4rem;
         font-style: normal;
         font-weight: 400;
@@ -1700,7 +1700,7 @@
 
     .screen5 .type {
         color: #FFF;
-        font-family: Gilroy;
+        font-family: Helvetica;
         font-size: 1.6rem;
         font-style: normal;
         font-weight: 500;
@@ -1710,7 +1710,7 @@
 
     .screen5 .name {
         color: #FFF;
-        font-family: Gilroy;
+        font-family: Helvetica;
         font-size: 2.4rem;
         font-style: normal;
         font-weight: 700;
@@ -1721,7 +1721,7 @@
     .screen5 .doc {
         color: rgba(255, 255, 255, 0.70);
         text-align: center;
-        font-family: Gilroy;
+        font-family: Helvetica;
         font-size: 1.6rem;
         font-style: normal;
         font-weight: 500;
