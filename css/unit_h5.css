@@ -1364,7 +1364,7 @@
 
     .screen5 .logo .bg {
         transition: all .3s;
-        width: 21.4rem;
+        width: 100%;
         height: max-content;
         flex-shrink: 0;
     }
@@ -1373,6 +1373,7 @@
         width: 21.4rem;
         height: 20.4rem;
         flex-shrink: 0;
+        overflow: hidden;
         margin-bottom: 1rem;
     }
 
@@ -1429,6 +1430,12 @@
 
     .screen5-addU1 {
         padding-top: 16rem;
+        -webkit-touch-callout: none; /*系统默认菜单被禁用*/
+        -webkit-user-select: none; /*webkit浏览器*/
+        -khtml-user-select: none; /*早起浏览器*/
+        -moz-user-select: none; /*火狐浏览器*/
+        -ms-user-select: none; /*IE浏览器*/
+        user-select: none; /*用户是否能够选中文本*/
     }
 
     .screen5-addU1 .box-in {
