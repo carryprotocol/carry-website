@@ -138,7 +138,7 @@
     /* overflow: hidden; */
   }
 
-  .bgU > * {
+  .bgU>* {
     display: block;
     /* width: auto;
     height: auto; */
@@ -604,14 +604,12 @@
 
   .screen2 .item:hover .shimmer {
     --geist-foreground-rgb: 255, 255, 255;
-    background: linear-gradient(
-      112deg,
-      transparent 30%,
-      rgba(var(--geist-foreground-rgb), 0.1) 40%,
-      rgba(var(--geist-foreground-rgb), 0.3) 50%,
-      rgba(var(--geist-foreground-rgb), 0.1) 60%,
-      transparent 80%
-    );
+    background: linear-gradient(112deg,
+        transparent 30%,
+        rgba(var(--geist-foreground-rgb), 0.1) 40%,
+        rgba(var(--geist-foreground-rgb), 0.3) 50%,
+        rgba(var(--geist-foreground-rgb), 0.1) 60%,
+        transparent 80%);
     position: absolute;
     inset: 0;
     z-index: 20;
@@ -838,12 +836,10 @@
   }
 
   .screen3 .side1 .mark {
-    background: linear-gradient(
-      90deg,
-      #cbe9fe 5.03%,
-      #5ec7ff 27.22%,
-      #01f4cb 99.89%
-    );
+    background: linear-gradient(90deg,
+        #cbe9fe 5.03%,
+        #5ec7ff 27.22%,
+        #01f4cb 99.89%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -854,13 +850,11 @@
   }
 
   .screen3 .side2 .mark {
-    background: linear-gradient(
-      91deg,
-      #feadac 3.53%,
-      #fd6260 26.77%,
-      #9954dd 64.28%,
-      #6e6bfa 97.12%
-    );
+    background: linear-gradient(91deg,
+        #feadac 3.53%,
+        #fd6260 26.77%,
+        #9954dd 64.28%,
+        #6e6bfa 97.12%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1299,13 +1293,11 @@
   }
 
   .screen3 .side3 .mark {
-    background: linear-gradient(
-      90deg,
-      #ddf0fe 0.14%,
-      #56b6fb 22.07%,
-      #656af4 65.43%,
-      #8f5df4 98.08%
-    );
+    background: linear-gradient(90deg,
+        #ddf0fe 0.14%,
+        #56b6fb 22.07%,
+        #656af4 65.43%,
+        #8f5df4 98.08%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1431,14 +1423,12 @@
     width: 31.2rem;
     height: 0.8rem;
     flex-shrink: 0;
-    background: linear-gradient(
-      90deg,
-      #e42365 1.34%,
-      #b731b2 26.81%,
-      #6729ff 51.87%,
-      rgba(63, 41, 255, 0.7) 75.95%,
-      rgba(50, 41, 255, 0) 99.97%
-    );
+    background: linear-gradient(90deg,
+        #e42365 1.34%,
+        #b731b2 26.81%,
+        #6729ff 51.87%,
+        rgba(63, 41, 255, 0.7) 75.95%,
+        rgba(50, 41, 255, 0) 99.97%);
   }
 
   .screen4 .bgU .lineL {
@@ -1448,14 +1438,12 @@
     width: 15.1rem;
     height: 0.8rem;
     flex-shrink: 0;
-    background: linear-gradient(
-      90deg,
-      #fe50cd 1.34%,
-      #b731b2 26.81%,
-      #6729ff 51.87%,
-      rgba(63, 41, 255, 0.7) 75.95%,
-      rgba(50, 41, 255, 0) 99.97%
-    );
+    background: linear-gradient(90deg,
+        #fe50cd 1.34%,
+        #b731b2 26.81%,
+        #6729ff 51.87%,
+        rgba(63, 41, 255, 0.7) 75.95%,
+        rgba(50, 41, 255, 0) 99.97%);
   }
 
   .screen4 .bgU .add {
@@ -1711,8 +1699,8 @@
   }
 
   .screen5 .logo {
-    width: 14.98rem;
-    height: 14.28rem;
+    width: 11.5rem;
+    height: 11rem;
     flex-shrink: 0;
     margin-bottom: 1rem;
     overflow: hidden;
@@ -1757,6 +1745,12 @@
   .screen5-addU2 {
     padding-top: 15rem;
     padding-bottom: 13.6rem;
+  }
+
+  .screen5-addU2 .logo {
+    width: 8.4rem;
+    height: 8rem;
+    flex-shrink: 0;
   }
 
   .screen5-addU2 .bg1 {
@@ -2212,14 +2206,12 @@
     width: 6.2rem;
     height: 1.2rem;
     flex-shrink: 0;
-    background: linear-gradient(
-      90deg,
-      #fe50cd 1.34%,
-      #b731b2 26.81%,
-      #6729ff 51.87%,
-      rgba(63, 41, 255, 0.7) 75.95%,
-      rgba(50, 41, 255, 0) 99.97%
-    );
+    background: linear-gradient(90deg,
+        #fe50cd 1.34%,
+        #b731b2 26.81%,
+        #6729ff 51.87%,
+        rgba(63, 41, 255, 0.7) 75.95%,
+        rgba(50, 41, 255, 0) 99.97%);
 
     left: 76.5rem;
     bottom: 21.9rem;
@@ -2299,13 +2291,11 @@
     width: 192rem;
     height: 99.4rem;
     flex-shrink: 0;
-    background: radial-gradient(
-      100% 100% at 50% 100%,
-      rgba(104, 91, 230, 0.5) 0%,
-      rgba(9, 153, 221, 0.5) 45.24%,
-      rgba(4, 209, 210, 0.14) 72.05%,
-      rgba(2, 229, 206, 0) 100%
-    );
+    background: radial-gradient(100% 100% at 50% 100%,
+        rgba(104, 91, 230, 0.5) 0%,
+        rgba(9, 153, 221, 0.5) 45.24%,
+        rgba(4, 209, 210, 0.14) 72.05%,
+        rgba(2, 229, 206, 0) 100%);
   }
 
   .scroll-gsap {

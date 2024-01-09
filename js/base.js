@@ -205,7 +205,7 @@ function gsapScreen5Add2() {
         defaults: { duration: .8, ease: "ease" },
         scrollTrigger: {
             trigger: "#screen5-addU2",
-            start: "top center",
+            start: "top 80%",
             end: "top top",
             scrub: 1,
             // markers: true
